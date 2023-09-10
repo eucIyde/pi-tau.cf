@@ -1,0 +1,103 @@
+/* Réinitialiser les styles par défaut du navigateur */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-spacing: 0;
+  box-sizing: border-box;
+}
+
+#pi
+{
+    color:red;
+    background-color: greenyellow;
+    text-align:center;
+}
+nav 
+{
+    border-bottom: 0.5px solid black;
+}
+
+.ab ol 
+{
+    list-style-type:lower-alpha;
+    padding-left:0;
+}
+
+.a
+{
+    display: inline-block;
+}
+
+.a a::after 
+{
+    display: inline-block;
+    color: #000;
+    content: '>';
+    font-size:100%;
+    font-weight: bold;
+    padding: 0 2px;
+}
+body
+{
+    background-color: navajowhite;
+}
+#troisieme -- h2
+{
+    color:aliceblue;
+    text-align: center;
+    background-color: firebrick;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: #006dcc;
+  font-size: 32px;
+  text-decoration: none;
+}
+
+.menu-label,
+.menu-cb {
+  cursor: pointer;
+  appearance: none;
+  position: fixed;
+  height: 32px;
+  width: 32px;
+  top: 20px;
+  right: 30px;
+  z-index: 4;
+}
+
+.menu-nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 90%;
+	max-width: 400px;
+  padding-top: 110px;
+  text-align: right;
+  background: #fff;
+  z-index: 2;
+  transform: translateX(100%);
+  transition: transform 1s linear;
+}
+
+.menu-item {
+  padding: .5em 20px;
+  border-top: 1px solid #ccc;
+}
+
+.menu-cb:checked ~ .menu-nav {
+  transform: translateX(0);
+}
+
+.menu-cote {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
