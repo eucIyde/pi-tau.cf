@@ -1,0 +1,29 @@
+<h1>Tests</h1>
+<div id="test"></div>
+<input type='text' id="contenu" placeholder="Contenu">
+<button id="envoyer">Envoyer</button>
+
+<script>
+
+var envoyer=document.getElementById('envoyer');
+envoyer.onclick=function(){
+  var contenu=document.getElementById('contenu').value;
+  var request = new XMLHttpRequest();
+  request.open('GET', 'essai.php?contenu='+contenu, true);
+
+  request.onload = function() {
+    if (request.status >= 200 && request.status < 400) {
+      var response = request.responseText;
+      document.getElementById('test').innerHTML = response;
+    } else {
+      console.error('Une erreur s\'est produite lors du chargement du contenu.');
+    }
+  };
+
+  request.onerror = function() {
+    console.error('Une erreur s\'est produite lors de la requête.');
+  };
+
+  request.send();
+}
+</script>

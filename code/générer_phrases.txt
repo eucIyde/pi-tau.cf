@@ -1,0 +1,676 @@
+<div style="color: #d4d4d4; background-color: #1e1e1e; font-family: 'Droid Sans Mono', 'monospace', monospace; font-weight: normal; font-size: 14px; line-height: 19px; white-space: pre;">
+<div style="color: #d4d4d4; background-color: #1e1e1e; font-family: 'Droid Sans Mono', 'monospace', monospace; font-weight: normal; font-size: 14px; line-height: 19px; white-space: pre;">
+<div><span style="color: #c586c0;">import</span><span style="color: #d4d4d4;"> </span><span style="color: #4ec9b0;">random</span></div>
+<br>
+<div><span style="color: #9cdcfe;">noms</span><span style="color: #d4d4d4;"> = [</span></div>
+<div><span style="color: #d4d4d4;"> [</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'cr&eacute;atures'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le chien'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"l'homme"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le cheval'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le cochon'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le mouton'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le lapin'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le rat'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le chat'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le canard'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le coq'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le poulet'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'Jean'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'Pierre'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'Paul'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'Jacques'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'Marie'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'Anne'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'Lucie'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'Julie'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'Julien'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'Louis'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'L&eacute;on'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'L&eacute;onard'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'L&eacute;onie'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'L&eacute;onore'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'L&eacute;opold'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'L&eacute;opoldine'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'L&eacute;onard'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'masculin'</span></div>
+<div><span style="color: #d4d4d4;"> ],</span></div>
+<br>
+<div><span style="color: #d4d4d4;"> [</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'nourriture'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le pain'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le fromage'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le chocolat'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le veau'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le cochon'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'la blanquette'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le riz'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le couscous'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le poulet'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le poisson'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le poulet marin&eacute;'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'masculin'</span></div>
+<div><span style="color: #d4d4d4;"> ],</span></div>
+<div><span style="color: #d4d4d4;"> [</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'objets'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'la table'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'la chaise'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le lit'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le canap&eacute;'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le fauteuil'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le r&eacute;frig&eacute;rateur'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le r&eacute;veil'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'la t&eacute;l&eacute;vision'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'la radio'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'la lampe'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'la bougie'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'la bouilloire'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le four'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le micro-ondes'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le grille-pain'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le stylo'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le crayon'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le cahier'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le livre'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le dictionnaire'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le journal'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le magazine'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le couteau'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'la fourchette'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'la cuill&egrave;re'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'la serviette'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le torchon'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le mouchoir'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le parapluie'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le miroir'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le s&egrave;che-cheveux'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le fer &agrave; repasser'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le s&egrave;che-linge'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le lave-linge'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le lave-vaisselle'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le s&egrave;che-vaisselle'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'masculin'</span></div>
+<div><span style="color: #d4d4d4;"> ]</span></div>
+<div><span style="color: #d4d4d4;">]</span></div>
+<div><span style="color: #9cdcfe;">verbes_3p_singulier</span><span style="color: #d4d4d4;"> = [</span></div>
+<div><span style="color: #d4d4d4;"> [</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'mange'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #b5cea8;">1</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'cr&eacute;atures'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'du pain'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'du fromage'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'du chocolat'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'la vache'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'le cochon'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'de la blanquette'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'du riz'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'du couscous'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'du poulet'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'du poisson'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'du poulet marin&eacute;'</span></div>
+<div><span style="color: #d4d4d4;"> ],</span></div>
+<div><span style="color: #d4d4d4;"> [</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'se trouve'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #b5cea8;">2</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'objets'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'cr&eacute;atures'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'sur la table'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'sur la chaise'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'sur le lit'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'sur le canap&eacute;'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'sur le fauteuil'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'dans la cuisine'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'dans la salle &agrave; manger'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'dans la chambre'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'dans le salon'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'dans la salle de bain'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'dans la salle de bain'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'dans la salle de bain'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'dans la salle de bain'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'au Kenya'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'en France'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'en Italie'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'en Espagne'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'en Allemagne'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'en Angleterre'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'en Belgique'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'en Suisse'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'en Autriche'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'en Norv&egrave;ge'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'en Su&egrave;de'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'en Finlande'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'en Russie'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'en Chine'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'en Inde'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'en Indon&eacute;sie'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'en Australie'</span></div>
+<div><span style="color: #d4d4d4;"> ],</span></div>
+<div><span style="color: #d4d4d4;"> [</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'est'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #b5cea8;">1</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'nourriture'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'bon'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'mauvais'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'d&eacute;licieux'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'d&eacute;go&ucirc;tant'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'exquis'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> ]</span></div>
+<div><span style="color: #d4d4d4;">]</span></div>
+<div><span style="color: #9cdcfe;">expressions</span><span style="color: #d4d4d4;"> = [</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'Au fur et &agrave; mesure, '</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'Avec le temps, '</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'Au d&eacute;but, '</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'Au final, '</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'Au moment o&ugrave;, '</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'De plus en plus, '</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'De moins en moins, '</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'G&eacute;n&eacute;ralement, '</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'Habituellement, '</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'Parfois, '</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'Souvent, '</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'Toujours, '</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'Jamais, '</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'En g&eacute;n&eacute;ral, '</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'En r&egrave;gle g&eacute;n&eacute;rale, '</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'Contre vents et mar&eacute;es, '</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'Dans tous les cas, '</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'Contre toute attente, '</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'En toute logique, '</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'En tout lieu dans la nuit, '</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'En tout temps, '</span></div>
+<div><span style="color: #d4d4d4;">]</span></div>
+<br>
+<div><span style="color: #9cdcfe;">complements</span><span style="color: #d4d4d4;"> = [</span><span style="color: #ce9178;">'en bois'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"d'Estonie"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"de France"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"en verre"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"de Paul"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"de Pierre"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"de Nils"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"de Matan"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"d'Enguerrand"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"de Lucie"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"d'Allemagne"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"d'hiver"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"d'&eacute;t&eacute;"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"de printemps"</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"d'automne"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"du chameau"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"d'Inde"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'sur la table'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'sur la chaise'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'sur le lit'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'sur le canap&eacute;'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'sur le fauteuil'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">'dans la cuisine'</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"de l'astrophysicien"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"d'Afrique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"d'Asie"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"d'Europe"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"d'Am&eacute;rique du Sud"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"d'Am&eacute;rique du Nord"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"d'Oc&eacute;anie"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"d'Antarctique"</span></div>
+<div><span style="color: #d4d4d4;"> ]</span></div>
+<br><br>
+<div><span style="color: #9cdcfe;">adj</span><span style="color: #d4d4d4;">=[</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"herniaire"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"in extenso"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"vite"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"chiche"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"math&eacute;matique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"ombellif&egrave;re"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"dionysiaque"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"nouille"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"aise"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"prime"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"dramatique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"gauche"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"linguistique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"technique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"statique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"hydraulique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"variable"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"vierge"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"esth&eacute;tique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"pratique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"didactique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"architectonique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"mauve"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"logistique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"acoustique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"statistique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"optique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"soeur"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"tarte"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"syntagmatique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"onomastique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"logique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"canaille"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"probl&eacute;matique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"courbe"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"circulaire"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"superbe"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"flasque"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"commode"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"stylistique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"opale"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"jugulaire"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"molleti&egrave;re"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"oblique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"sonore"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"clinique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"dupe"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"annexe"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"arithm&eacute;tique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"balistique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"cybern&eacute;tique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"botanique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"tactique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"tectonique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"informatique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"phon&eacute;tique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"caract&eacute;ristique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"louche"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"panique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"minuscule"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"chronique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"faisane"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"gymnastique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"vache"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"gemme"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"automobile"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"nymphomane"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"muscade"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"sociolinguistique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"numismatique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"pimb&ecirc;che"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"typho&iuml;de"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"thyro&iuml;de"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"majuscule"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"femelle"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"rosse"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"ficelle"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"lunaire"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"perpendiculaire"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"misandre"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"ethnolinguistique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"symbolique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"gymnique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"pondeuse"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"primipare"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"adjoint"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"automatique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"hongre"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"expert"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"organisateur"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"huiti&egrave;me"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"yougoslave"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"cajun"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"couche-tard"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"couche-t&ocirc;t"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"arthritique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"indig&egrave;ne"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"masochiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"puriste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"cochon"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"intime"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"cave"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"maniaque"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"russe"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"notable"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"bengali"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"vague"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"infid&egrave;le"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"physique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"incendiaire"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"catholique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"litt&eacute;raire"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"domestique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"scientifique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"alcoolique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"bilingue"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"suicidaire"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"esclave"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"critique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"riche"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"volontaire"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"dogmatique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"fratricide"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"plastique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"parall&egrave;le"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"amarante"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"pourpre"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"danois"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"bulgare"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"kurde"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"parricide"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"centenaire"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"profane"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"corse"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"centi&egrave;me"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"deuxi&egrave;me"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"dix-huiti&egrave;me"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"dix-neuvi&egrave;me"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"dix-septi&egrave;me"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"dixi&egrave;me"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"douzi&egrave;me"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"milli&egrave;me"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"quatorzi&egrave;me"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"quatre-vingti&egrave;me"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"quinzi&egrave;me"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"seizi&egrave;me"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"septi&egrave;me"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"sixi&egrave;me"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"soixante-dixi&egrave;me"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"soixanti&egrave;me"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"treizi&egrave;me"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"trenti&egrave;me"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"troisi&egrave;me"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"vingti&egrave;me"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"neuvi&egrave;me"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"quaranti&egrave;me"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"interne"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"amateur"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"capitaliste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"communiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"universitaire"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"impie"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"opportuniste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"myope"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"paralytique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"orthodoxe"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"antagoniste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"adult&egrave;re"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"germanique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"kabyle"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"comique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"excentrique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"homologue"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"matricule"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"adulte"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"aristocrate"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"nocturne"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"complice"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"bouddhiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"responsable"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"malade"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"surnum&eacute;raire"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"interm&eacute;diaire"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"extraterrestre"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"externe"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"futuriste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"soci&eacute;taire"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"altruiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"impressionniste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"gothique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"parjure"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"animiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"existentialiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"cycliste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"boulimique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"comptable"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"dyslexique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"parano&iuml;aque"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"psychotique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"publicitaire"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"insulaire"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"cardiaque"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"cubiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"diab&eacute;tique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"politique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"mystique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"nationaliste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"obligataire"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"syndicaliste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"berb&egrave;re"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"arabe"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"subalterne"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"sage"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"solitaire"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"neurasth&eacute;nique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"sadique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"brave"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"novice"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"quinquag&eacute;naire"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"quadrag&eacute;naire"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"guat&eacute;malt&egrave;que"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"incorruptible"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"rebelle"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"humaniste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"schizophr&egrave;ne"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"invalide"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"visionnaire"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"polygame"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"idol&acirc;tre"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"avare"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"fasciste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"iconoclaste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"hyst&eacute;rique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"autochtone"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"philosophe"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"noble"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"machiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"barbare"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"irresponsable"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"monolingue"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"fantaisiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"trilingue"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"antifasciste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"asthmatique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"apoplectique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"fanatique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"slave"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"fumiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"psychologue"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"gay"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"libre-&eacute;changiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"godiche"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"dingue"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"minable"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"ladre"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"helv&egrave;te"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"impub&egrave;re"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"insomniaque"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"cachectique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"fana"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"dada&iuml;ste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"marxiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"naturiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"nudiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"socialiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"nonag&eacute;naire"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"octog&eacute;naire"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"sexag&eacute;naire"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"arriviste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"protectionniste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"urbaniste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"virtuose"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"aboulique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"aphasique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"asth&eacute;nique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"autiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"infirme"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"bronchitique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"syphilitique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"mythomane"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"parapl&eacute;gique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"sadomasochiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"toxicomane"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"pamphl&eacute;taire"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"pingre"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"anthropophage"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"fantasque"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"sovi&eacute;tique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"belge"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"britannique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"perse"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"annamite"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"saoudien"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"asiatique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"hell&egrave;ne"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"anglophone"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"malgache"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"madril&egrave;ne"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"portoricain"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"scandinave"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"suisse"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"hypocrite"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"lunatique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"francophone"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"jubilaire"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"anonyme"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"cairote"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"basque"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"optimiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"bravache"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"noctambule"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"aprioriste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"goinfre"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"anticommuniste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"antis&eacute;mite"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"sceptique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"ignare"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"androgyne"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"sybarite"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"espi&egrave;gle"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"allopathe"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"orthop&eacute;diste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"oculiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"cathare"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"sunnite"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"antisovi&eacute;tique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"anti-imp&eacute;rialiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"antiparlementaire"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"contre-r&eacute;volutionnaire"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"progressiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"jans&eacute;niste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"anarchiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"autonomiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"monarchiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"pacifiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"gauchiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"structuraliste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"doctrinaire"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"sidatique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"pygm&eacute;e"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"humoriste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"motocycliste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"contresignataire"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"fleuriste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"vandale"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"sexiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"stagiaire"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"entrepositaire"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"unijambiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"putschiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"ventriloque"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"titulaire"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"esth&egrave;te"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"parachutiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"autodidacte"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"conformiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"cannibale"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"somnambule"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"apatride"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"aveugle"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"coupable"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"anglophobe"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"physionomiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"claustrophobe"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"auxiliaire"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"francophile"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"anglophile"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"patriote"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"avant-gardiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"surr&eacute;aliste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"symboliste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"pessimiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"hypocondriaque"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"leuc&eacute;mique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"presbyte"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"retardataire"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"hypersensible"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"francophobe"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"non(-)conformiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"bigame"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"belliciste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"inflationniste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"nordique"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"vell&eacute;itaire"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"extr&eacute;miste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"immobiliste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"fataliste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"laxiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"raciste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"aborig&egrave;ne"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"misanthrope"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"alarmiste"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"omnivore"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"timide"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"nomade"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"incapable"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"chauve"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"borgne"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"instable"</span><span style="color: #d4d4d4;">,</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #ce9178;">"jeune"</span></div>
+<div><span style="color: #d4d4d4;">]</span></div>
+<br><br>
+<div><span style="color: #569cd6;">def</span><span style="color: #d4d4d4;"> </span><span style="color: #dcdcaa;">generer_phrase</span><span style="color: #d4d4d4;">():</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #9cdcfe;">expression</span><span style="color: #d4d4d4;"> = </span><span style="color: #4ec9b0;">random</span><span style="color: #d4d4d4;">.</span><span style="color: #9cdcfe;">randint</span><span style="color: #d4d4d4;">(</span><span style="color: #b5cea8;">0</span><span style="color: #d4d4d4;">, </span><span style="color: #b5cea8;">3</span><span style="color: #d4d4d4;">)</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #9cdcfe;">phrase</span><span style="color: #d4d4d4;"> = </span><span style="color: #ce9178;">''</span></div>
+<br>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #c586c0;">if</span><span style="color: #d4d4d4;"> </span><span style="color: #9cdcfe;">expression</span><span style="color: #d4d4d4;"> == </span><span style="color: #b5cea8;">0</span><span style="color: #d4d4d4;">:</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #9cdcfe;">phrase</span><span style="color: #d4d4d4;"> += </span><span style="color: #4ec9b0;">random</span><span style="color: #d4d4d4;">.</span><span style="color: #9cdcfe;">choice</span><span style="color: #d4d4d4;">(</span><span style="color: #9cdcfe;">expressions</span><span style="color: #d4d4d4;">)</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #9cdcfe;">noms_pour_phrase</span><span style="color: #d4d4d4;"> = </span><span style="color: #4ec9b0;">random</span><span style="color: #d4d4d4;">.</span><span style="color: #9cdcfe;">choice</span><span style="color: #d4d4d4;">(</span><span style="color: #9cdcfe;">noms</span><span style="color: #d4d4d4;">)</span></div>
+<br>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #9cdcfe;">type_nom</span><span style="color: #d4d4d4;"> = </span><span style="color: #9cdcfe;">noms_pour_phrase</span><span style="color: #d4d4d4;">[</span><span style="color: #b5cea8;">0</span><span style="color: #d4d4d4;">]</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #9cdcfe;">nom</span><span style="color: #d4d4d4;"> = </span><span style="color: #4ec9b0;">random</span><span style="color: #d4d4d4;">.</span><span style="color: #9cdcfe;">choice</span><span style="color: #d4d4d4;">(</span><span style="color: #9cdcfe;">noms_pour_phrase</span><span style="color: #d4d4d4;">[</span><span style="color: #b5cea8;">1</span><span style="color: #d4d4d4;">:])</span></div>
+<br>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #9cdcfe;">adjectif</span><span style="color: #d4d4d4;">= </span><span style="color: #4ec9b0;">random</span><span style="color: #d4d4d4;">.</span><span style="color: #9cdcfe;">randint</span><span style="color: #d4d4d4;">(</span><span style="color: #b5cea8;">0</span><span style="color: #d4d4d4;">, </span><span style="color: #b5cea8;">2</span><span style="color: #d4d4d4;">)</span></div>
+<br>
+<div><span style="color: #d4d4d4;"> </span></div>
+<br>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #9cdcfe;">complement</span><span style="color: #d4d4d4;"> = </span><span style="color: #4ec9b0;">random</span><span style="color: #d4d4d4;">.</span><span style="color: #9cdcfe;">randint</span><span style="color: #d4d4d4;">(</span><span style="color: #b5cea8;">0</span><span style="color: #d4d4d4;">, </span><span style="color: #b5cea8;">2</span><span style="color: #d4d4d4;">)</span></div>
+<br><br>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #c586c0;">if</span><span style="color: #d4d4d4;"> </span><span style="color: #9cdcfe;">expression</span><span style="color: #d4d4d4;"> != </span><span style="color: #b5cea8;">0</span><span style="color: #d4d4d4;">:</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #9cdcfe;">phrase</span><span style="color: #d4d4d4;"> += </span><span style="color: #9cdcfe;">nom</span><span style="color: #d4d4d4;">[</span><span style="color: #b5cea8;">0</span><span style="color: #d4d4d4;">].</span><span style="color: #dcdcaa;">upper</span><span style="color: #d4d4d4;">() + </span><span style="color: #9cdcfe;">nom</span><span style="color: #d4d4d4;">[</span><span style="color: #b5cea8;">1</span><span style="color: #d4d4d4;">:]</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #c586c0;">if</span><span style="color: #d4d4d4;"> </span><span style="color: #9cdcfe;">adjectif</span><span style="color: #d4d4d4;"> == </span><span style="color: #b5cea8;">0</span><span style="color: #d4d4d4;">:</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #9cdcfe;">phrase</span><span style="color: #d4d4d4;"> += </span><span style="color: #4ec9b0;">random</span><span style="color: #d4d4d4;">.</span><span style="color: #9cdcfe;">choice</span><span style="color: #d4d4d4;">(</span><span style="color: #9cdcfe;">adj</span><span style="color: #d4d4d4;">) + </span><span style="color: #ce9178;">' '</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #c586c0;">if</span><span style="color: #d4d4d4;"> </span><span style="color: #9cdcfe;">complement</span><span style="color: #d4d4d4;"> == </span><span style="color: #b5cea8;">0</span><span style="color: #d4d4d4;">:</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #9cdcfe;">phrase</span><span style="color: #d4d4d4;"> +=</span><span style="color: #ce9178;">' '</span><span style="color: #d4d4d4;">+</span><span style="color: #4ec9b0;">random</span><span style="color: #d4d4d4;">.</span><span style="color: #9cdcfe;">choice</span><span style="color: #d4d4d4;">(</span><span style="color: #9cdcfe;">complements</span><span style="color: #d4d4d4;">)</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #c586c0;">else</span><span style="color: #d4d4d4;">:</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #9cdcfe;">phrase</span><span style="color: #d4d4d4;"> += </span><span style="color: #9cdcfe;">nom</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #c586c0;">if</span><span style="color: #d4d4d4;"> </span><span style="color: #9cdcfe;">adjectif</span><span style="color: #d4d4d4;"> == </span><span style="color: #b5cea8;">0</span><span style="color: #d4d4d4;">:</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #9cdcfe;">phrase</span><span style="color: #d4d4d4;"> += </span><span style="color: #4ec9b0;">random</span><span style="color: #d4d4d4;">.</span><span style="color: #9cdcfe;">choice</span><span style="color: #d4d4d4;">(</span><span style="color: #9cdcfe;">adj</span><span style="color: #d4d4d4;">) + </span><span style="color: #ce9178;">' '</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #c586c0;">if</span><span style="color: #d4d4d4;"> </span><span style="color: #9cdcfe;">complement</span><span style="color: #d4d4d4;"> == </span><span style="color: #b5cea8;">0</span><span style="color: #d4d4d4;">:</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #9cdcfe;">phrase</span><span style="color: #d4d4d4;"> +=</span><span style="color: #ce9178;">' '</span><span style="color: #d4d4d4;">+</span><span style="color: #4ec9b0;">random</span><span style="color: #d4d4d4;">.</span><span style="color: #9cdcfe;">choice</span><span style="color: #d4d4d4;">(</span><span style="color: #9cdcfe;">complements</span><span style="color: #d4d4d4;">)</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #9cdcfe;">phrase</span><span style="color: #d4d4d4;"> += </span><span style="color: #ce9178;">' '</span></div>
+<br>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #9cdcfe;">listes_verbes_posibles</span><span style="color: #d4d4d4;"> = []</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #c586c0;">for</span><span style="color: #d4d4d4;"> </span><span style="color: #9cdcfe;">liste_verbes</span><span style="color: #d4d4d4;"> </span><span style="color: #c586c0;">in</span><span style="color: #d4d4d4;"> </span><span style="color: #9cdcfe;">verbes_3p_singulier</span><span style="color: #d4d4d4;">:</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #c586c0;">for</span><span style="color: #d4d4d4;"> </span><span style="color: #9cdcfe;">i</span><span style="color: #d4d4d4;"> </span><span style="color: #c586c0;">in</span><span style="color: #d4d4d4;"> </span><span style="color: #4ec9b0;">range</span><span style="color: #d4d4d4;">(</span><span style="color: #9cdcfe;">liste_verbes</span><span style="color: #d4d4d4;">[</span><span style="color: #b5cea8;">1</span><span style="color: #d4d4d4;">]):</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #c586c0;">if</span><span style="color: #d4d4d4;"> </span><span style="color: #9cdcfe;">liste_verbes</span><span style="color: #d4d4d4;">[</span><span style="color: #b5cea8;">2</span><span style="color: #d4d4d4;"> + </span><span style="color: #9cdcfe;">i</span><span style="color: #d4d4d4;">] == </span><span style="color: #9cdcfe;">type_nom</span><span style="color: #d4d4d4;">:</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #9cdcfe;">listes_verbes_posibles</span><span style="color: #d4d4d4;">.</span><span style="color: #dcdcaa;">append</span><span style="color: #d4d4d4;">(</span><span style="color: #9cdcfe;">liste_verbes</span><span style="color: #d4d4d4;">)</span></div>
+<br>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #9cdcfe;">num&eacute;ro_verbe</span><span style="color: #d4d4d4;"> = </span><span style="color: #4ec9b0;">random</span><span style="color: #d4d4d4;">.</span><span style="color: #9cdcfe;">randint</span><span style="color: #d4d4d4;">(</span><span style="color: #b5cea8;">0</span><span style="color: #d4d4d4;">, </span><span style="color: #dcdcaa;">len</span><span style="color: #d4d4d4;">(</span><span style="color: #9cdcfe;">listes_verbes_posibles</span><span style="color: #d4d4d4;">) - </span><span style="color: #b5cea8;">1</span><span style="color: #d4d4d4;">)</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #9cdcfe;">verbe</span><span style="color: #d4d4d4;"> = </span><span style="color: #9cdcfe;">listes_verbes_posibles</span><span style="color: #d4d4d4;">[</span><span style="color: #9cdcfe;">num&eacute;ro_verbe</span><span style="color: #d4d4d4;">][</span><span style="color: #b5cea8;">0</span><span style="color: #d4d4d4;">]</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #9cdcfe;">phrase</span><span style="color: #d4d4d4;"> += </span><span style="color: #9cdcfe;">verbe</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #c586c0;">try</span><span style="color: #d4d4d4;">:</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #4fc1ff;">COD</span><span style="color: #d4d4d4;"> = </span><span style="color: #4ec9b0;">random</span><span style="color: #d4d4d4;">.</span><span style="color: #9cdcfe;">choice</span><span style="color: #d4d4d4;">(</span><span style="color: #9cdcfe;">listes_verbes_posibles</span><span style="color: #d4d4d4;">[</span><span style="color: #9cdcfe;">num&eacute;ro_verbe</span><span style="color: #d4d4d4;">][</span><span style="color: #9cdcfe;">listes_verbes_posibles</span><span style="color: #d4d4d4;">[</span><span style="color: #9cdcfe;">num&eacute;ro_verbe</span><span style="color: #d4d4d4;">][</span><span style="color: #b5cea8;">1</span><span style="color: #d4d4d4;">]+</span><span style="color: #b5cea8;">1</span><span style="color: #d4d4d4;">:])</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #c586c0;">except</span><span style="color: #d4d4d4;">:</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #c586c0;">try</span><span style="color: #d4d4d4;">:</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #4fc1ff;">COD</span><span style="color: #d4d4d4;"> = </span><span style="color: #4ec9b0;">random</span><span style="color: #d4d4d4;">.</span><span style="color: #9cdcfe;">choice</span><span style="color: #d4d4d4;">(</span><span style="color: #9cdcfe;">listes_verbes_posibles</span><span style="color: #d4d4d4;">[</span><span style="color: #9cdcfe;">num&eacute;ro_verbe</span><span style="color: #d4d4d4;">][</span><span style="color: #9cdcfe;">listes_verbes_posibles</span><span style="color: #d4d4d4;">[</span><span style="color: #9cdcfe;">num&eacute;ro_verbe</span><span style="color: #d4d4d4;">][</span><span style="color: #b5cea8;">1</span><span style="color: #d4d4d4;">]+</span><span style="color: #b5cea8;">1</span><span style="color: #d4d4d4;">:])</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #c586c0;">except</span><span style="color: #d4d4d4;">:</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #4fc1ff;">COD</span><span style="color: #d4d4d4;"> = </span><span style="color: #4ec9b0;">random</span><span style="color: #d4d4d4;">.</span><span style="color: #9cdcfe;">choice</span><span style="color: #d4d4d4;">(</span><span style="color: #9cdcfe;">listes_verbes_posibles</span><span style="color: #d4d4d4;">[</span><span style="color: #9cdcfe;">num&eacute;ro_verbe</span><span style="color: #d4d4d4;">][</span><span style="color: #9cdcfe;">listes_verbes_posibles</span><span style="color: #d4d4d4;">[</span><span style="color: #9cdcfe;">num&eacute;ro_verbe</span><span style="color: #d4d4d4;">][</span><span style="color: #b5cea8;">1</span><span style="color: #d4d4d4;">]+</span><span style="color: #b5cea8;">1</span><span style="color: #d4d4d4;">:])</span></div>
+<br>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #9cdcfe;">phrase</span><span style="color: #d4d4d4;"> += </span><span style="color: #ce9178;">' '</span><span style="color: #d4d4d4;"> + </span><span style="color: #4fc1ff;">COD</span></div>
+<div><span style="color: #d4d4d4;"> </span></div>
+<br>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #9cdcfe;">phrase</span><span style="color: #d4d4d4;"> += </span><span style="color: #ce9178;">'.'</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #c586c0;">return</span><span style="color: #d4d4d4;"> </span><span style="color: #9cdcfe;">phrase</span></div>
+<br><br>
+<div><span style="color: #c586c0;">for</span><span style="color: #d4d4d4;"> </span><span style="color: #9cdcfe;">i</span><span style="color: #d4d4d4;"> </span><span style="color: #c586c0;">in</span><span style="color: #d4d4d4;"> </span><span style="color: #4ec9b0;">range</span><span style="color: #d4d4d4;">(</span><span style="color: #4ec9b0;">int</span><span style="color: #d4d4d4;">(</span><span style="color: #dcdcaa;">input</span><span style="color: #d4d4d4;">(</span><span style="color: #ce9178;">"Combien de phrases voulez-vous g&eacute;n&eacute;rer ?"</span><span style="color: #d4d4d4;">))):</span></div>
+<div><span style="color: #d4d4d4;"> </span><span style="color: #dcdcaa;">print</span><span style="color: #d4d4d4;">(</span><span style="color: #dcdcaa;">generer_phrase</span><span style="color: #d4d4d4;">())</span></div>
+</div>
+</div>
